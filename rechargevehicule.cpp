@@ -41,7 +41,7 @@ void RechargeVehicule::replyFinished(QNetworkReply *reply)
     /*qDebug() << objetJson.toVariantMap()["DataProvider"].toList().at(0).toList().at(0);*/
     QFont font("Bavaria",9,QFont::Bold); //augmenter la taille de la police
     ui->tableWidget->setFont(font);
-    font.setItalic(true);
+
     ui->tableWidget->setColumnCount(3); //nombre de colonne;
     ui->tableWidget->setShowGrid(false);
     ui->tableWidget->horizontalHeader()->hide();//pour cacher le nom ou numero des ligne
